@@ -10,10 +10,10 @@ export const portfolioData = {
   },
 
   about: {
-    description: "I'm a dedicated software developer with a strong foundation in data structures, algorithms, and full-stack development. With 680+ problems solved on LeetCode and hands-on experience building production-ready applications, I combine theoretical knowledge with practical implementation. My expertise spans from designing RESTful APIs and event-driven architectures to implementing real-time communication systems and AI-powered features.",
+    description: "I'm a dedicated software developer with a strong foundation in data structures, algorithms, and full-stack development. With 700+ problems solved on LeetCode and hands-on experience building production-ready applications, I combine theoretical knowledge with practical implementation. My expertise spans from designing RESTful APIs and event-driven architectures to implementing real-time communication systems and AI-powered features.",
     highlights: [
       "Full-stack developer specializing in MERN stack",
-      "LeetCode Knight with 680+ problems solved",
+      "LeetCode Knight with 700+ problems solved",
       "Experience with real-time systems and event-driven architecture",
       "Passionate about building scalable, user-centric applications"
     ]
@@ -87,7 +87,7 @@ export const portfolioData = {
   achievements: [
     {
       title: "LeetCode Knight",
-      description: "680+ problems solved with a maximum streak of 127 days",
+      description: "700+ problems solved with a maximum streak of 127 days",
       icon: "trophy"
     },
     {
