@@ -1,4 +1,4 @@
-import { Heart, Github, Linkedin, Mail } from 'lucide-react';
+import { Heart, Github, Linkedin, Mail, Code, Trophy } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 const Footer = () => {
@@ -57,6 +57,33 @@ const Footer = () => {
                 className="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:bg-gray-700/50 transition-all hover:scale-110"
               >
                 <Mail size={20} />
+              </a>
+              <a
+                href={portfolioData.personal.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:bg-gray-700/50 transition-all hover:scale-110"
+                title="LeetCode"
+              >
+                <Code size={20} />
+              </a>
+              <a
+                href={portfolioData.personal.codeforces}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:bg-gray-700/50 transition-all hover:scale-110"
+                title="CodeForces"
+              >
+                <Trophy size={20} />
+              </a>
+              <a
+                href={portfolioData.personal.codechef}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-gray-800/50 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:bg-gray-700/50 transition-all hover:scale-110"
+                title="CodeChef"
+              >
+                <Code size={20} />
               </a>
             </div>
           </div>

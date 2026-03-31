@@ -1,4 +1,4 @@
-import { Trophy, Star, Award, Medal } from 'lucide-react';
+import { Trophy, Star, Award, Medal, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 const Achievements = () => {
@@ -37,9 +37,22 @@ const Achievements = () => {
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
-                      {achievement.title}
-                    </h3>
+                    <div className="flex items-center gap-2 mb-2">
+                      <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                        {achievement.title}
+                      </h3>
+                      {achievement.link && (
+                        <a
+                          href={achievement.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-cyan-400 transition-colors"
+                          title="Visit profile"
+                        >
+                          <ExternalLink size={18} />
+                        </a>
+                      )}
+                    </div>
                     <p className="text-gray-400 leading-relaxed">{achievement.description}</p>
                   </div>
                 </div>

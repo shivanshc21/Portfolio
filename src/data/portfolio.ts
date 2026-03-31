@@ -6,6 +6,9 @@ export const portfolioData = {
     phone: "+91-9795449504",
     linkedin: "https://linkedin.com/in/shivansh-chaurasiya-3ab6422a0",
     github: "https://github.com/shivanshc21",
+    leetcode: "https://leetcode.com/shivanshc21",
+    codeforces: "https://codeforces.com/profile/shivanshc21",
+    codechef: "https://www.codechef.com/users/shivanshc21",
     intro: "A passionate software developer and competitive programmer pursuing B.Tech in Electronics and Communication Engineering at IIITDM Jabalpur. I specialize in full-stack development, building scalable web applications, and solving complex algorithmic challenges."
   },
 
@@ -88,17 +91,20 @@ export const portfolioData = {
     {
       title: "LeetCode Knight",
       description: "700+ problems solved with a maximum streak of 127 days",
-      icon: "trophy"
+      icon: "trophy",
+      link: "https://leetcode.com/shivanshc21"
     },
     {
       title: "CodeChef 3-Star",
       description: "250+ problems solved with 3-star rating",
-      icon: "star"
+      icon: "star",
+      link: "https://www.codechef.com/users/shivanshc21"
     },
     {
       title: "CodeForces Pupil",
       description: "Pupil rank with 250+ problems solved",
-      icon: "award"
+      icon: "award",
+      link: "https://codeforces.com/profile/shivanshc21"
     },
     {
       title: "Roborush 2.0 - 3rd Position",
