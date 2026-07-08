@@ -1,12 +1,12 @@
-import { Trophy, Star, Award, Medal, ExternalLink } from 'lucide-react';
-import { portfolioData } from '../data/portfolio';
+import { Trophy, Star, Award, Medal, ExternalLink } from "lucide-react";
+import { portfolioData } from "../data/portfolio";
 
 const Achievements = () => {
   const iconMap = {
     trophy: Trophy,
     star: Star,
     award: Award,
-    medal: Medal
+    medal: Medal,
   };
 
   return (
@@ -23,7 +23,8 @@ const Achievements = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {portfolioData.achievements.map((achievement, idx) => {
-            const Icon = iconMap[achievement.icon as keyof typeof iconMap] || Trophy;
+            const Icon =
+              iconMap[achievement.icon as keyof typeof iconMap] || Trophy;
             return (
               <div
                 key={idx}
@@ -53,7 +54,9 @@ const Achievements = () => {
                         </a>
                       )}
                     </div>
-                    <p className="text-gray-400 leading-relaxed">{achievement.description}</p>
+                    <p className="text-gray-400 leading-relaxed">
+                      {achievement.description}
+                    </p>
                   </div>
                 </div>
               </div>

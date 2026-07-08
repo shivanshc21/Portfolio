@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
-import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
-import { portfolioData } from '../data/portfolio';
+import { useState, useEffect } from "react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
+import { portfolioData } from "../data/portfolio";
 
 const Hero = () => {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("");
   const fullText = portfolioData.personal.tagline;
 
   useEffect(() => {
@@ -21,11 +21,11 @@ const Hero = () => {
   }, []);
 
   const scrollToProjects = () => {
-    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToContact = () => {
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -78,7 +78,8 @@ const Hero = () => {
               Contact Me
             </button>
             <a
-              href="#"
+              href="/resume.pdf"
+              download="Shivansh_Chaurasiya_Resume.pdf"
               className="px-8 py-3 bg-gray-800/50 backdrop-blur-sm text-white rounded-lg font-medium border border-gray-700 hover:border-cyan-500 hover:shadow-lg hover:shadow-cyan-500/30 transition-all hover:scale-105 flex items-center gap-2"
             >
               <Download size={18} />
