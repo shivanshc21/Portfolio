@@ -54,9 +54,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-800">
+    <section id="skills" className="py-20 bg-gray-950/20 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Skills & Technologies
@@ -71,19 +71,19 @@ const Skills = () => {
             return (
               <div
                 key={idx}
-                className="group p-6 rounded-2xl bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 hover:border-cyan-500/50 transition-all hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/10"
+                className="group p-6 rounded-2xl bg-gray-900/40 backdrop-blur-md border border-gray-800/80 hover:border-cyan-500/35 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/5 reveal-scale"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.gradient} flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.gradient} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md`}>
                     <Icon className="text-white" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                  <h3 className="text-xl font-bold text-white tracking-wide">{category.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIdx) => (
                     <span
                       key={skillIdx}
-                      className="px-3 py-1.5 text-sm bg-gray-800/70 text-gray-300 rounded-lg border border-gray-700/50 hover:border-cyan-500/50 hover:text-cyan-400 transition-all"
+                      className="px-3 py-1.5 text-sm bg-gray-950/50 text-gray-300 rounded-lg border border-gray-850 hover:border-cyan-500/40 hover:text-cyan-400 hover:bg-cyan-500/5 transition-all duration-300 hover:scale-105 transform cursor-default"
                     >
                       {skill}
                     </span>

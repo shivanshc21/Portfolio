@@ -10,9 +10,9 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-900">
+    <section id="about" className="py-20 bg-gray-950/40 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               About Me
@@ -22,23 +22,23 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-500/20 p-8 flex items-center justify-center">
+          <div className="relative reveal-left">
+            <div className="aspect-square rounded-2xl bg-gradient-to-br from-gray-900/60 to-gray-800/40 backdrop-blur-md border border-gray-800 hover:border-cyan-500/50 p-8 flex items-center justify-center transition-all duration-500 hover:scale-[1.01] hover:shadow-2xl hover:shadow-cyan-500/5 group">
               <div className="text-center">
-                <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-6xl font-bold text-white shadow-2xl shadow-cyan-500/50">
+                <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center text-6xl font-bold text-white shadow-2xl shadow-cyan-500/30 group-hover:scale-105 transition-all duration-500">
                   SC
                 </div>
-                <p className="text-xl text-gray-300 font-semibold">
+                <p className="text-2xl text-white font-bold tracking-wide">
                   {portfolioData.personal.name}
                 </p>
-                <p className="text-cyan-400">Software Developer</p>
+                <p className="text-cyan-400 font-medium mt-1">Software Developer</p>
               </div>
             </div>
-            <div className="absolute -z-10 top-4 left-4 w-full h-full rounded-2xl bg-gradient-to-br from-cyan-500/10 to-blue-500/10"></div>
+            <div className="absolute -z-10 -top-2 -left-2 w-full h-full rounded-2xl bg-gradient-to-br from-cyan-500/5 to-blue-500/5 blur-sm"></div>
           </div>
 
-          <div className="space-y-6">
-            <p className="text-gray-300 text-lg leading-relaxed">
+          <div className="space-y-6 reveal-right">
+            <p className="text-gray-350 text-lg leading-relaxed font-light">
               {portfolioData.about.description}
             </p>
 
@@ -48,12 +48,12 @@ const About = () => {
                 return (
                   <div
                     key={index}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-cyan-500/50 transition-all hover:scale-105 group"
+                    className="flex items-start gap-4 p-4 rounded-xl bg-gray-900/40 backdrop-blur-md border border-gray-800/80 hover:border-cyan-500/40 hover:bg-gray-850/40 hover:-translate-y-0.5 transition-all duration-300 group"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center group-hover:from-cyan-500/30 group-hover:to-blue-500/30 transition-all">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500/10 to-blue-500/10 flex items-center justify-center group-hover:from-cyan-500/20 group-hover:to-blue-500/20 transition-all">
                       <Icon className="text-cyan-400" size={20} />
                     </div>
-                    <p className="text-gray-300 pt-2">{item.text}</p>
+                    <p className="text-gray-300 font-normal pt-2">{item.text}</p>
                   </div>
                 );
               })}
