@@ -1,25 +1,19 @@
-import { Code2, Server, Database, Wrench, Cloud, Brain, FileCode } from 'lucide-react';
+import { Code2, Database, Wrench, Cloud, Brain, FileCode, BookOpen, Users } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'Languages',
+      icon: FileCode,
+      skills: portfolioData.skills.languages,
+      gradient: 'from-yellow-500 to-orange-500'
+    },
+    {
+      title: 'Frameworks & Libraries',
       icon: Code2,
-      skills: portfolioData.skills.frontend,
+      skills: portfolioData.skills.frameworks,
       gradient: 'from-cyan-500 to-blue-500'
-    },
-    {
-      title: 'Backend',
-      icon: Server,
-      skills: portfolioData.skills.backend,
-      gradient: 'from-blue-500 to-purple-500'
-    },
-    {
-      title: 'AI/ML',
-      icon: Brain,
-      skills: portfolioData.skills.aiml,
-      gradient: 'from-purple-500 to-pink-500'
     },
     {
       title: 'Databases',
@@ -28,22 +22,34 @@ const Skills = () => {
       gradient: 'from-green-500 to-teal-500'
     },
     {
-      title: 'Tools',
+      title: 'Developer Tools',
       icon: Wrench,
       skills: portfolioData.skills.tools,
       gradient: 'from-orange-500 to-red-500'
     },
     {
-      title: 'Services',
+      title: 'Platforms & Services',
       icon: Cloud,
       skills: portfolioData.skills.services,
       gradient: 'from-teal-500 to-cyan-500'
     },
     {
-      title: 'Languages',
-      icon: FileCode,
-      skills: portfolioData.skills.languages,
-      gradient: 'from-yellow-500 to-orange-500'
+      title: 'Core Areas',
+      icon: Brain,
+      skills: portfolioData.skills.coreAreas,
+      gradient: 'from-purple-500 to-pink-500'
+    },
+    {
+      title: 'Relevant Coursework',
+      icon: BookOpen,
+      skills: portfolioData.skills.coursework,
+      gradient: 'from-blue-500 to-purple-500'
+    },
+    {
+      title: 'Soft Skills',
+      icon: Users,
+      skills: portfolioData.skills.softSkills,
+      gradient: 'from-pink-500 to-rose-500'
     }
   ];
 

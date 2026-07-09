@@ -10,114 +10,98 @@ export const portfolioData = {
     codeforces: "https://codeforces.com/profile/shivanshc21",
     codechef: "https://www.codechef.com/users/shivanshc21",
     intro:
-      "A passionate software developer and competitive programmer pursuing B.Tech in Electronics and Communication Engineering at IIITDM Jabalpur. I specialize in full-stack development, building scalable web applications, and solving complex algorithmic challenges.",
+      "Aspiring Software Engineer with strong problem-solving skills, a solid foundation in computer science fundamentals, and a proven track record in competitive programming. Eager to contribute to impactful software products and grow as a developer.",
   },
 
   about: {
     description:
-      "I'm a dedicated software developer with a strong foundation in data structures, algorithms, and full-stack development. With 700+ problems solved on LeetCode and hands-on experience building production-ready applications, I combine theoretical knowledge with practical implementation. My expertise spans from designing RESTful APIs and event-driven architectures to implementing real-time communication systems and AI-powered features.",
+      "I am an Aspiring Software Engineer pursuing B.Tech in Electronics and Communication Engineering at IIITDM Jabalpur. With strong problem-solving skills, a solid foundation in computer science fundamentals, and a proven track record in competitive programming (including 800+ LeetCode problems solved and Knight badge), I am eager to build high-performance backend systems and multi-agent AI workflows.",
     highlights: [
-      "Full-stack developer specializing in MERN stack",
-      "LeetCode Knight with 700+ problems solved",
-      "Experience with real-time systems and event-driven architecture",
-      "Passionate about building scalable, user-centric applications",
+      "B.Tech in ECE at PDPM IIITDM Jabalpur",
+      "LeetCode Knight (Max Rating: 1987) with 800+ Solved",
+      "Specializes in React.js, Node.js & FastAPI",
+      "Proven track record in Competitive Programming",
     ],
   },
 
   skills: {
-    frontend: [
-      "React.js",
-      "Redux",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-    ],
-    backend: [
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "JWT",
-      "Event-Driven Systems",
-    ],
-    aiml: ["LLM Integration", "Prompt Engineering", "Context-Aware Systems"],
-    databases: ["MongoDB", "MySQL", "PostgreSQL", "Mongoose"],
-    tools: ["Git", "GitHub", "Docker", "Postman"],
-    services: [
-      "Cloudinary",
-      "ImageKit",
-      "Clerk",
-      "Inngest",
-      "Nodemailer",
-      "Stripe",
-    ],
-    languages: ["C++", "Python", "JavaScript"],
+    languages: ["C++", "Python", "HTML", "CSS", "Typescript", "JavaScript"],
+    frameworks: ["React.js", "Express.js", "Node.js", "Redux", "LangGraph", "FastAPI", "Next.js"],
+    databases: ["MongoDB", "MySQL", "PostgreSQL", "pgvector"],
+    tools: ["Git", "GitHub", "Docker", "Postman", "Redis", "Celery"],
+    services: ["Cloudinary", "ImageKit", "Clerk", "Inngest", "Nodemailer"],
+    coreAreas: ["Data Structures and Algorithms", "Backend Development", "REST APIs", "Event-Driven Systems"],
+    coursework: ["Computer Networking", "Object-Oriented Programming (OOP)", "Operating Systems", "DBMS"],
+    softSkills: ["Teamwork", "Problem Solving", "Leadership", "Adaptability", "Time Management", "Quick Learning"]
   },
 
   projects: [
     {
-      title: "PingUp - Social Networking Platform",
+      title: "PingUp - Social Platform with Event-Driven Architecture",
       description:
-        "A full-stack social media platform with real-time messaging, user profiles, follow functionality, and an LLM-powered chat assistant for context-aware reply suggestions.",
+        "A full-stack social networking platform with 10+ core features including profiles, discovery, messaging, and AI-assisted interactions.",
       techStack: [
         "React.js",
+        "React Router DOM",
         "Redux",
         "Express.js",
         "Node.js",
         "MongoDB",
-        "SSE",
+        "Multer",
         "Inngest",
         "Clerk",
+        "ImageKit",
+        "SSE"
       ],
       features: [
-        "Real-time private messaging using Server-Sent Events (SSE)",
-        "Event-driven architecture with Inngest for service synchronization",
-        "LLM-powered chat assistant with context-aware suggestions",
-        "User profiles, follow system, and personalized discovery",
+        "Designed a full-stack social networking platform with profiles, discovery, messaging, and AI-assisted interactions",
+        "Architected event-driven workflows using Inngest, Clerk, and ImageKit for authentication, media management, and cross-service synchronization",
+        "Integrated AI-based contextual reply suggestions and Server-Sent Events (SSE) for intelligent, real-time user interactions"
       ],
       github: "https://github.com/shivanshc21/PingUp",
       live: "#",
       category: "fullstack",
     },
     {
-      title: "Tomato - Food Delivery Platform",
+      title: "AgentFlow - Multi-Agent AI Document Intelligence Platform",
       description:
-        "A comprehensive food delivery website with secure authentication, cart management, online payments via Stripe, and role-based access control.",
+        "A multi-agent AI document intelligence platform orchestrating agents for automated document analysis, RAG query pipelines, and task planning.",
       techStack: [
-        "React.js",
-        "Express.js",
-        "Node.js",
-        "MongoDB",
-        "JWT",
-        "Stripe",
+        "FastAPI",
+        "Python",
+        "LangGraph",
+        "PostgreSQL",
+        "pgvector",
+        "Redis",
+        "Celery",
+        "Next.js"
       ],
       features: [
-        "Secure user authentication with JWT and bcrypt",
-        "RESTful APIs for user, food catalog, and order management",
-        "Role-based access control for customers and admins",
-        "Stripe integration for secure payment processing",
+        "Engineered a multi-agent AI platform using LangGraph, orchestrating Retriever, Planner, Writer, and Critic agents",
+        "Implemented a RAG pipeline with document chunking, vector embeddings, and semantic search using pgvector",
+        "Developed scalable backend services with FastAPI, Redis, and Celery for asynchronous document processing and real-time AI interactions"
       ],
-      github: "https://github.com/shivanshc21/Tomato",
+      github: "https://github.com/shivanshc21/AgentFlow",
       live: "#",
-      category: "fullstack",
+      category: "ai",
     },
     {
-      title: "Video Tube Backend",
+      title: "VideoTube - Scalable Video Hosting Backend",
       description:
-        "A YouTube-style video hosting backend with comprehensive features including authentication, video management, engagement system, and subscription functionality.",
+        "A YouTube-style video hosting backend with comprehensive user authentication, video processing, engagement tracking, and subscription system.",
       techStack: [
         "Express.js",
         "Node.js",
         "MongoDB",
+        "JavaScript",
         "JWT",
         "bcrypt",
-        "Mongoose",
+        "Mongoose"
       ],
       features: [
-        "10+ core features: login, video upload, likes, comments, subscriptions",
-        "Secure authentication with access/refresh tokens",
-        "Industry-standard password hashing and session handling",
-        "Comment threads, video engagement, and subscription management",
+        "Designed a YouTube-style video hosting backend with 10+ core features including login, sign-up, logout, video upload, likes/dislikes, comments, replies, and subscriptions",
+        "Engineered backend using Node.js, Express.js, MongoDB, Mongoose, with secure authentication via JWT, bcrypt, and token-based session handling",
+        "Implemented access and refresh token-based authentication with secure password hashing following industry-standard practices"
       ],
       github: "https://github.com/shivanshc21/VideoTube",
       live: "#",
@@ -127,48 +111,53 @@ export const portfolioData = {
 
   experience: [
     {
-      title: "B.Tech in Electronics and Communication Engineering",
-      organization: "IIITDM Jabalpur",
+      title: "Bachelor of Technology in Electronics and Communication Engineering",
+      organization: "PDPM Indian Institute of Information Technology, Design and Manufacturing Jabalpur",
       period: "Aug 2023 - Present",
       description:
-        "CPI: 8.1 | Relevant Coursework: Data Structures and Algorithms, Computer Networking, OOP, Operating Systems, DBMS",
+        "CPI: 8.1 | Coursework: Computer Networking, Object-Oriented Programming (OOP), Operating Systems, DBMS, Data Structures and Algorithms",
       type: "education",
     },
   ],
 
   achievements: [
     {
-      title: "LeetCode Knight",
-      description: "700+ problems solved with a maximum streak of 127 days",
+      title: "LeetCode Biweekly Contest 184",
+      description: "Ranked in the Top 2% Globally (Rank 585/35,747)",
       icon: "trophy",
       link: "https://leetcode.com/shivanshc21",
     },
     {
+      title: "LeetCode Knight",
+      description: "Knight badge with Max Rating: 1987, and 800+ problems solved",
+      icon: "award",
+      link: "https://leetcode.com/shivanshc21",
+    },
+    {
       title: "CodeChef 3-Star",
-      description: "250+ problems solved with 3-star rating",
+      description: "3-star rating with Max Rating: 1602, and 250+ problems solved",
       icon: "star",
       link: "https://www.codechef.com/users/shivanshc21",
     },
     {
-      title: "CodeForces Pupil",
-      description: "Pupil rank with 250+ problems solved",
+      title: "CodeForces Specialist",
+      description: "Specialist rank with 250+ problems solved",
       icon: "award",
       link: "https://codeforces.com/profile/shivanshc21",
     },
     {
       title: "Roborush 2.0 - 3rd Position",
-      description:
-        "Secured 3rd position in robotics competition organized by Electronics and Robotics Society IIITDMJ",
+      description: "Secured 3rd position in competition organized by Electronics and Robotics Society IIITDMJ",
       icon: "medal",
     },
   ],
 
   volunteer: [
     {
-      title: "Core Member - Jagrati IITDMJ",
+      title: "Core Member - Jagrati IIITDMJ",
       description:
         "Led social media strategy and community engagement, supporting educational programs for 100+ underprivileged children daily",
-      period: "Ongoing",
+      period: "Aug 2023 - Present",
     },
   ],
 };
