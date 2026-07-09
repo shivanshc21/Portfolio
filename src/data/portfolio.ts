@@ -59,7 +59,7 @@ export const portfolioData = {
         "Integrated AI-based contextual reply suggestions and Server-Sent Events (SSE) for intelligent, real-time user interactions"
       ],
       github: "https://github.com/shivanshc21/PingUp",
-      live: "#",
+      live: "https://pingup-umber.vercel.app/",
       category: "fullstack",
     },
     {
