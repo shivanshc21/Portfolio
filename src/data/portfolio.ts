@@ -15,10 +15,10 @@ export const portfolioData = {
 
   about: {
     description:
-      "I am an Aspiring Software Engineer pursuing B.Tech in Electronics and Communication Engineering at IIITDM Jabalpur. With strong problem-solving skills, a solid foundation in computer science fundamentals, and a proven track record in competitive programming (including 800+ LeetCode problems solved and Knight badge), I am eager to build high-performance backend systems and multi-agent AI workflows.",
+      "I am an Aspiring Software Engineer pursuing B.Tech in Electronics and Communication Engineering at IIITDM Jabalpur. With strong problem-solving skills, a solid foundation in computer science fundamentals, and a proven track record in competitive programming (including 850+ LeetCode problems solved and Knight badge), I am eager to build high-performance backend systems and multi-agent AI workflows.",
     highlights: [
       "B.Tech in ECE at PDPM IIITDM Jabalpur",
-      "LeetCode Knight (Max Rating: 1987) with 800+ Solved",
+      "LeetCode Knight (Max Rating: 2033) with 850+ Solved",
       "Specializes in React.js, Node.js & FastAPI",
       "Proven track record in Competitive Programming",
     ],
@@ -115,7 +115,7 @@ export const portfolioData = {
       organization: "PDPM Indian Institute of Information Technology, Design and Manufacturing Jabalpur",
       period: "Aug 2023 - Present",
       description:
-        "CPI: 8.1 | Coursework: Computer Networking, Object-Oriented Programming (OOP), Operating Systems, DBMS, Data Structures and Algorithms",
+        "CPI: 8.2 | Coursework: Computer Networking, Object-Oriented Programming (OOP), Operating Systems, DBMS, Data Structures and Algorithms",
       type: "education",
     },
   ],
@@ -129,7 +129,7 @@ export const portfolioData = {
     },
     {
       title: "LeetCode Knight",
-      description: "Knight badge with Max Rating: 1987, and 800+ problems solved",
+      description: "Knight badge with Max Rating: 2033, and 850+ problems solved",
       icon: "award",
       link: "https://leetcode.com/shivanshc21",
     },
@@ -141,7 +141,7 @@ export const portfolioData = {
     },
     {
       title: "CodeForces Specialist",
-      description: "Specialist rank with 250+ problems solved",
+      description: "Specialist rank (Max Rating: 1516) with 300+ problems solved",
       icon: "award",
       link: "https://codeforces.com/profile/shivanshc21",
     },
